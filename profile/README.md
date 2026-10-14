@@ -2,20 +2,20 @@
 
 **Multimodal Translator to Dominican Sign Language (LSRD).**
 
-Biblionx is a university thesis project (Trabajo de Grado, UNICDA) building an accessibility pipeline that translates written Spanish into **Lengua de Señas Dominicana (LSRD)** — Dominican Sign Language. It covers natural language processing, a structured sign dictionary, a REST API, and a browser extension so the translation can be consumed as a real product, not just a research prototype.
+Biblionx is a university thesis project (Trabajo de Grado, UNICDA) building an accessibility pipeline that translates written Spanish (Dominican Republic) into **Lengua de Señas Dominicana (LSRD)**, Dominican Sign Language. It covers natural language processing, a structured sign dictionary, a REST API, a 3D sign player and browser integrations so the translation can be used as a real product, not just a research prototype.
 
 ## 📂 Repositories
 
 | Repository | Role |
 | :--- | :--- |
-| [**biblionx-lsrd-translator**](https://github.com/Biblionx-Project/biblionx-lsrd-translator) | 🟢 **Active, working repository.** The actual Spanish → LSRD translation engine: NLP module, SQLite sign dictionary (2,458 entries), REST API, and browser extension. |
-| [biblionx-libraske-processor](https://github.com/Biblionx-Project/biblionx-libraske-processor) | 📚 Architecture reference — historically adapted from [VLibras](https://www.vlibras.gov.br/) Libraskê Processor; now independent LSRD equivalent. |
-| [biblionx-player-webjs](https://github.com/Biblionx-Project/biblionx-player-webjs) | 📚 Architecture reference — historically adapted from VLibras Player; now independent LSRD player. |
-| [biblionx-translator-api](https://github.com/Biblionx-Project/biblionx-translator-api) | 📚 Architecture reference — historically adapted from VLibras API; now independent LSRD API. |
-| [biblionx-translator-text-core](https://github.com/Biblionx-Project/biblionx-translator-text-core) | 📚 Architecture reference — historically adapted from VLibras; now independent LSRD NLP. |
-| [biblionx-web-browsers](https://github.com/Biblionx-Project/biblionx-web-browsers) | 📚 Architecture reference — historically adapted from VLibras; now independent LSRD extensions. |
+| [**biblionx-lsrd-translator**](https://github.com/Biblionx-Project/biblionx-lsrd-translator) | 🟢 **Active, working repository.** The Spanish → LSRD translation engine: NLP module, SQLite sign dictionary (2,458 entries), REST API, web playground and browser extension. |
+| [biblionx-libraske-processor](https://github.com/Biblionx-Project/biblionx-libraske-processor) | 📚 Architecture reference: processing worker for pose extraction and gesture evaluation of LSRD signs. |
+| [biblionx-player-webjs](https://github.com/Biblionx-Project/biblionx-player-webjs) | 📚 Architecture reference: WebGL 3D avatar player that renders LSRD signs in the browser. |
+| [biblionx-translator-api](https://github.com/Biblionx-Project/biblionx-translator-api) | 📚 Architecture reference: translation REST API service that exposes Spanish → LSRD translation. |
+| [biblionx-translator-text-core](https://github.com/Biblionx-Project/biblionx-translator-text-core) | 📚 Architecture reference: text translation core (NLP) that converts Spanish text into LSRD gloss. |
+| [biblionx-web-browsers](https://github.com/Biblionx-Project/biblionx-web-browsers) | 📚 Architecture reference: browser plugins and embeddable widget for translating web pages into LSRD. |
 
-The reference repositories were initially inspired by the open-source [VLibras](https://www.vlibras.gov.br/) project (Brazilian Sign Language translator). They have evolved into independent LSRD implementations and are maintained in this organization as architectural reference for the design of the Dominican Sign Language pipeline — they are not active dependencies of the final product.
+The architecture reference repositories document the design of the Dominican Sign Language pipeline. They are not active dependencies of the final product; `biblionx-lsrd-translator` is.
 
 ## 🎓 About
 
@@ -23,7 +23,7 @@ This organization hosts the code produced for a thesis project (Trabajo de Grado
 
 ## ⚖️ License
 
-The VLibras-derived reference repositories are licensed under LGPLv3 — see each repository's `LICENSE` file for details.
+The architecture reference repositories are licensed under LGPLv3. See each repository's `LICENSE` file for details.
 
 ## 👥 Team
 
@@ -34,3 +34,7 @@ The VLibras-derived reference repositories are licensed under LGPLv3 — see eac
 ## 📬 Contact
 
 Open an issue in the relevant repository for questions or contributions.
+
+## Origins
+
+The architecture reference components were initially forked from the open-source VLibras project. They have since evolved into independent projects of their own.
