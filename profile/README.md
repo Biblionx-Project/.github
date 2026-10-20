@@ -8,7 +8,7 @@ Biblionx is a university thesis project (Trabajo de Grado, UNICDA) building an a
 
 | Repository | Role |
 | :--- | :--- |
-| [**biblionx-lsrd-translator**](https://github.com/Biblionx-Project/biblionx-lsrd-translator) | 🟢 **Active, working repository.** The Spanish → LSRD translation engine: NLP module, SQLite sign dictionary (2,458 entries), REST API, web playground and browser extension. |
+| [**biblionx-lsrd-translator**](https://github.com/Biblionx-Project/biblionx-lsrd-translator) | 🟢 **Active, working repository (v2.2).** The Spanish → LSRD translation engine: Dominican Spanish normalization, ML matching, optional AI fallback, NLP module, SQLite sign dictionary, REST API, web playground and browser extension. |
 | [biblionx-libraske-processor](https://github.com/Biblionx-Project/biblionx-libraske-processor) | 📚 Architecture reference: processing worker for pose extraction and gesture evaluation of LSRD signs. |
 | [biblionx-player-webjs](https://github.com/Biblionx-Project/biblionx-player-webjs) | 📚 Architecture reference: WebGL 3D avatar player that renders LSRD signs in the browser. |
 | [biblionx-translator-api](https://github.com/Biblionx-Project/biblionx-translator-api) | 📚 Architecture reference: translation REST API service that exposes Spanish → LSRD translation. |
@@ -33,7 +33,7 @@ The architecture reference repositories are licensed under LGPLv3. See each repo
 
 ## 📬 Contact
 
-Open an issue in the relevant repository for questions or contributions.
+Open an issue in the relevant repository for questions or contributions. Read [CONTRIBUTING](https://github.com/Biblionx-Project/.github/blob/main/CONTRIBUTING.md) before opening a pull request, and report vulnerabilities privately as described in [SECURITY](https://github.com/Biblionx-Project/.github/blob/main/SECURITY.md).
 
 ## Origins
 
